@@ -2,7 +2,7 @@
 
 namespace GenericRepository.Repositories
 {
-    public interface IGenericRepository<TEntity> where TEntity : BaseEntity
+    public interface IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         void Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> entities);

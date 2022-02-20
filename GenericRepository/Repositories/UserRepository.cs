@@ -2,7 +2,7 @@
 
 namespace GenericRepository.Repositories
 {
-    public class UserRepository : GenericRepository<User>, IUserRepository
+    public class UserRepository : BaseRepository<User>, IUserRepository
     {
         public IEnumerable<User> GetAdults()
         {

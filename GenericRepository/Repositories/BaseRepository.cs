@@ -2,11 +2,11 @@
 
 namespace GenericRepository.Repositories
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         protected readonly List<TEntity> _entities;
 
-        public GenericRepository()
+        public BaseRepository()
         {
             _entities = new List<TEntity>();
         }
